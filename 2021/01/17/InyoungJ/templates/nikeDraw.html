@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Doubtless
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130428
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700"
+          rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/nikeDraw.css') }}" rel="stylesheet" type="text/css"/>
+    <!--    <link href="default_ie6.css" rel="stylesheet" type="text/css"/>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+     .drawCard
+    {
+      width: 250px;
+      
+    } 
+    .container {
+      width: 1400px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .cardTitle{
+      height: 70px;
+    }
+
+  </style>
+  </head>
+  <script>
+    var totalData;
+    var dataPerPage=3;
+    var pageCount;
+    var page = 1;
+    $(document).ready(function () {
+        nikeDraw(page);
+        //paging(totalData, dataPerPage, pageCount, 1);
+        // totalData : 전체 json 리스트 개수
+        // dataPerPage : 한 페이지에 나타낼 데이터 수 -> 3
+        // pageCount : 한 화면에 나타낼 수 있는 페이지 수 ->  totalPage = response['pageSize']
+    });
+
+    
+
+    function makeCard(name, date, image,url) {
+      let tempHtml = `
+      <div class="drawCard" >
+        <h5 class='cardTitle'>${name}</h5>
+        <img role="shoesDraw" src="${image}" style="width: 250px"></img><p></p>
+        일정<h5>${date}</h5>
+        <a type="button" class="btn btn-secondary btn-lg" tabindex="-1" href="${url}">Draw</a>
+      </div>
+      `
+      $('#page').append(tempHtml);
+    }
+
+    function requestWithTarget(target){
+      page = target;
+      $('#page').empty();
+      $('#pageNum').empty();
+      nikeDraw(page);
+    }
+
+    function makePagingCard(page) {
+      tempHtml = `<span type="button" onclick='requestWithTarget(${page})'> [${page}] </span>`
+      $('#pageNum').append(tempHtml);
+    }
+
+    function prevRequest(){
+      if (page > 1){ 
+        page -=1;
+        $('#page').empty();
+        nikeDraw(page)
+      }
+      else {
+        alert('First page')
+      }
+      
+    }
+    function nextRequest(){
+      if(page < totalPage){
+      page +=1;
+      $('#page').empty();
+      nikeDraw(page)
+      }
+      else{
+        alert('Last page')        
+      }
+    
+    }
+
+    function nikeDraw(page) {
+        $.ajax({
+            type: "GET",
+            url: `/nikeDrawData?page=${page}`,
+            data: {},
+            success: function (response) {
+            console.log(response);
+            for (let i = 0; i < response['DrawResult'].length ; i++){
+              d_name = response['DrawResult'][i]['name'];
+              d_image = response['DrawResult'][i]['image'];
+              d_date = response['DrawResult'][i]['date'].split('.')[0];
+              d_url = response['DrawResult'][i]['url'];
+              console.log(d_name,d_date);
+              makeCard(d_name,d_date,d_image,d_url);
+              }
+              totalPage = response['pageSize'];
+              pageCount = totalPage;
+              totalData = totalPage * 3;
+              pageNum;
+              page;
+
+              for (let x=1; x<= totalPage; x++){
+                makePagingCard(x);
+              }          
+          }
+        })
+      }
+
+  </script>
+
+
+  <body>
+    <div id="logo" class="container">
+      <h1><a href="#"><span style="text-transform : capitalize">D</span>raw <span
+          style="text-transform : capitalize">M</span>anager</a></h1>
+    </div>
+    <div id="menu-wrapper">
+      <div id="menu" class="container">
+        <ul>
+          <li id="homepage"><a href="/">Homepage</a></li>
+          <li class="nike" id="nike"><a href="/nikeDraw">nike</a></li>
+          <li id="casina"><a href="/">casina</a></li>
+          <li id="adidas"><a href="/">adidas</a></li>
+          <li id="nb"><a href="/">New Balance</a></li>
+          <li id="support"><a href="/">about</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="page" class="container">
+</div>
+        <div id='pageNum'>          
+      </div>
+  
+  </body>
+</html>
