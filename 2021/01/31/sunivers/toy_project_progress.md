@@ -1,0 +1,2 @@
+- [리눅스 환경변수 영구 설정](https://user-images.githubusercontent.com/26291081/106452927-e64ee180-64cb-11eb-9388-82729aa1e82d.png)
+- [pm2로 서버 무중단 설정](https://user-images.githubusercontent.com/26291081/106453044-10080880-64cc-11eb-8651-cc04db1f8dcd.png)
