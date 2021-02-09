@@ -1,5 +1,5 @@
 ## 이번주 목표 
           
-1. 백기선님의 스터디할래 Annotation 정리           
-2. SSAFY 알고리즘 스터디 4문제(+a) 모두 풀기               
-3. SSAFY CS 스터디 `HTTP와 HTTPS`, `DNS와 DHCP	` 정리하기  	      
+1. 백기선님의 스터디할래 Annotation 정리 [완료](https://velog.io/@kwj1270/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98)             
+2. SSAFY 알고리즘 스터디 4문제(+a) 모두 풀기 완료 [1](https://github.com/SSAFY-5th-GwanJu-4C/Algorithm_AlgoGaZa/blob/main/kwj1270/2%EC%9B%94%201%EC%A3%BC/1316_%EA%B7%B8%EB%A3%B9%EB%8B%A8%EC%96%B4%EC%B2%B4%EC%BB%A4.md),[2](https://github.com/SSAFY-5th-GwanJu-4C/Algorithm_AlgoGaZa/blob/main/kwj1270/2%EC%9B%94%201%EC%A3%BC/11656_%EC%A0%91%EB%AF%B8%EC%82%AC%20%EB%B0%B0%EC%97%B4.md),[3](https://github.com/SSAFY-5th-GwanJu-4C/Algorithm_AlgoGaZa/blob/main/kwj1270/2%EC%9B%94%201%EC%A3%BC/1181_%EB%8B%A8%EC%96%B4%EC%A0%95%EB%A0%AC.md),[4](https://github.com/SSAFY-5th-GwanJu-4C/Algorithm_AlgoGaZa/blob/main/kwj1270/2%EC%9B%94%201%EC%A3%BC/1213_%ED%8E%A0%EB%A6%B0%EB%93%9C%EB%A1%AC%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md), [+a는 리스트만 띄우겠습니다.](https://github.com/SSAFY-5th-GwanJu-4C/Algorithm_AlgoGaZa/tree/main/kwj1270/2%EC%9B%94%201%EC%A3%BC)              
+3. SSAFY CS 스터디 `HTTP와 HTTPS`, `DNS와 DHCP` 정리하기 [HTTP_완료](https://github.com/SSAFY-5th-GwanJu-4C/CS_IS_ESC/blob/main/network/kwj1270/04%20HTTP%EC%99%80%20HTTPS.md), [DNS_완료](https://github.com/SSAFY-5th-GwanJu-4C/CS_IS_ESC/blob/main/network/kwj1270/05%20DNS%EC%99%80%20DHCP.md)  	        
