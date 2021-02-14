@@ -2,7 +2,7 @@
 
 1. 리액트와 socket.io를 결합해 채팅 어플리케이션 만들어 보기 [✅]
 
-- [결과물](https://github.com/C17AN/react-socket-chat)
+- [결과물 저장소 링크](https://github.com/C17AN/react-socket-chat)
 
 2. [vuex 속성 강의](https://www.youtube.com/watch?v=nFh7-HfODYY) 보고 내용 정리하기 [✅]
 
