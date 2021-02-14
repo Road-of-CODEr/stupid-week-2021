@@ -193,7 +193,7 @@ Bank bank = (Bank) Proxy.newProxyInstance(
 AOP Framework (Spring AOP, JBoss AOP)를 통해서 위의 단점들을 해결할 수 있다. Spring에서는 비지니스 로직을 POJO로 작성해 해당 도메인에만 초점을 맞추면 된다. 따라서 테스트가 개념적으로 더 쉽고 간단하다.
 
 ```
-beans>
+<beans>
     ...
     <bean id="appDataSource"
         class="org.apache.commons.dbcp.BasicDataSource"
