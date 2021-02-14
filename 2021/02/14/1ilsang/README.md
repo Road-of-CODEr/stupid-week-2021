@@ -2,4 +2,4 @@
 
 1. 알고리즘: LeetCode Weekly Contest 226 도전
 2. 영어공부: 네이버영어, 말해보카 도전
-3. Next 정리하기
+3. [Next 정리](https://github.com/Road-of-CODEr/we-hate-js/pull/31)하기
