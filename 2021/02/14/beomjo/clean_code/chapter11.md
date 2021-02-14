@@ -1,4 +1,4 @@
-
+# Chapter 11 - 시스템
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
@@ -41,7 +41,7 @@
 **관심사 분리**는 우리 분야에서 가장 오래되고 가장 중요한 설계 기법중 하나이다.
 
 코드로 알아보자
-```
+```java
 public Service getService() {
   if (service == null) {
     service = new MyServiceImpl(...);
@@ -87,7 +87,7 @@ public Service getService() {
 한 객체가 맡은 보조 책임을 새로운 객체에게 전적으로 떠넘긴다.
 새로운 객체는 넘겨받은 책임만 맡으므로 단일책임원칙<sup>Single Responsibility Principle, SRP</sup>을 지키게 된다.
 
-```
+```java
 MyService myService = applicationContext.getBean(MyService.class)
 ```
 
@@ -119,7 +119,7 @@ AOP에서 관점(Aspect) 이라는 모듈 구성 개념은
 ## 자바 프록시
 자바 프록시는 단순한 상황에 적합하다.
 개별 객체나 클래스에서 메서드 호출을 감싸는 경우가 좋은 예다.
-```
+```java
 // Bank.java ((패키지 이름을 감춘다)
 import java.utils.*;
 
@@ -192,7 +192,7 @@ Bank bank = (Bank) Proxy.newProxyInstance(
 ## 순수 자바 AOP 프레임워크
 AOP Framework (Spring AOP, JBoss AOP)를 통해서 위의 단점들을 해결할 수 있다. Spring에서는 비지니스 로직을 POJO로 작성해 해당 도메인에만 초점을 맞추면 된다. 따라서 테스트가 개념적으로 더 쉽고 간단하다.
 
-```
+```xml
 <beans>
     ...
     <bean id="appDataSource"
@@ -212,7 +212,7 @@ AOP Framework (Spring AOP, JBoss AOP)를 통해서 위의 단점들을 해결할
     ...
 </beans>
 ```
-```
+```java
 XmlBeanFactory bf = new XmlBeanFactory(new ClassPathResource("app.xml", getClass()));
 Bank bank = (Bank) bf.getBean("bank");
 ```
@@ -221,7 +221,7 @@ Bank bank = (Bank) bf.getBean("bank");
 라이언트에서 Bank의 getAccount()를 호출한다고 믿지만 실제로는 DECORATOR 객체 집합의 가장 외곽과 통신한다. xml이라 읽기 힘들 수는 있지만, Java Proxy보다는 간결하다.
 
 EBJ3을 이용하여 다시 작성한 코드이다.
-```
+```java
 package com.example.banking.model;
 
 import javax.persistence.*;

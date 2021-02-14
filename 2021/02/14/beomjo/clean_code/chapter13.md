@@ -64,7 +64,7 @@ Thread를 하나만 실행하는 코드는 짜기가 쉽다. 겉으로 보기에
 
 ## 난관
 동시성을 구현하기 어려운 이유
-```
+```java
 public class X {
     private int lastIdUsed;
 
@@ -250,7 +250,7 @@ ConcurrentHashMap의 경우에는 일반 HashMap보다 대부분의 상황에서
 
 #### 직접 구현하기
 이는 `wait()`, `sleep()`, `yield()`, `priority()` 등의 메서드를 사용해 실행 경로를 변경함으로써 코드의 문제를 발견하는 방법이다.
-```
+```java
 public synchronized String nextUrlOrNull() {
     if(hasNext()) {
         String url = urlGenerator.next();
@@ -272,7 +272,7 @@ yield() 메서드를 호출함으로써 코드의 실행 경로를 변경할 수
 
 #### 자동화
 위와 다르게 Aspect-oriented Framework, CGLib, ASM등을 통해 프로그램적으로 코드를 조작할 수도 있다.
-```
+```java
 public class ThreadJigglePoint {
     public static void jiggle() { }
 }

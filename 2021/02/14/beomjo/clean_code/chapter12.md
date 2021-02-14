@@ -64,12 +64,12 @@
 
 
 중복의 한 형태
-```
+```java
 // Bad
 int size() {}
 boolean isEmpty{}
 ```
-```
+```java
 // Good
 boolean isEmpty() {
   return 0 == size();
@@ -79,7 +79,7 @@ boolean isEmpty() {
 깔끔한 시스템을 만들려면 단 몇 줄이라도 중복을 제거하겠다는 의지가 필요하다.
 
 
-```
+```java
 // Bad
 public void scaleToOneDimension(float desiredDimension, float imageDimension) {
   if (Math.abs(desiredDimension - imageDimension) < errorThreshold)
@@ -102,7 +102,7 @@ public synchronized void rotate(int degrees) {
 ```
 `scaleToOnDimension` 메서드와 `rotate` 메서드를 살펴보면 일부 코드가 동일하다.
 
-```
+```java
 // Good
 public void scaleToOneDimension(float desiredDimension, float imageDimension) {
   if (Math.abs(desiredDimension - imageDimension) < errorThreshold)
@@ -131,7 +131,7 @@ private void replaceImage(RenderedOp newImage) {
 
 
 다른 예로 [TEMPLATE METHOD](https://beomseok95.tistory.com/245?category=1066005) 패턴을 사용하여 고차원 중복을 제거하는 예시를 살펴본다
-```
+```java
 public class VacationPolicy {
   public void accrueUSDDivisionVacation() {
     // 지금까지 근무한 시간을 바탕으로 휴가 일수를 계산하는 코드
@@ -153,7 +153,7 @@ public class VacationPolicy {
 }
 ```
 최소 법정 일수를 계산하는 코드만 제외하면 두 메서드는 거의 동일하다.
-```
+```java
 abstract public class VacationPolicy {
   public void accrueVacation() {
     caculateBseVacationHours();
