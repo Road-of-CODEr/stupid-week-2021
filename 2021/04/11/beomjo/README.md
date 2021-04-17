@@ -1,5 +1,3 @@
-## 이번주 목표
-
-1. Android Media Browser 정리
-2. 토이프로젝트 마켓 출시 준비
-3. 알고리즘 문제풀이 3문제
+1. Android Media Browser 정리 - [정리](https://github.com/beomjo/android-study/blob/main/summary/android_audio/media_brwoser.md)
+2. 토이프로젝트 마켓 출시 준비 - [구글 플레이 검토 요청 완료](https://user-images.githubusercontent.com/39984656/114313523-cffb7c80-9b31-11eb-9c83-11c8cd8eaa73.png)
+3. 알고리즘 문제풀이 3문제 - [풀이1](https://github.com/beomjo/algorithm-study/commit/cefd1d4f397e30a51dc039c4da4dd6a162db1719), [풀이2](https://github.com/beomjo/algorithm-study/commit/4f5b0e0292359488c6f860063dc8043e23ea4721), [풀이3](https://github.com/beomjo/algorithm-study/commit/fae10e58ac2456c3285164129dbd59a49b4e3dbd)
