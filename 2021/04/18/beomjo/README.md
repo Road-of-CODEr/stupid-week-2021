@@ -1,3 +1,3 @@
-1. Android AAC DataStore 정리
-2. 토이프로젝트 소개 페이지 정리
-3. 알고리즘 문제풀이 3문제 
+1. Android AAC DataStore 정리 - [정리](https://github.com/beomjo/android-study/blob/main/summary/jetpack/data_store.md)
+2. 토이프로젝트 소개 페이지 정리 - [README](https://github.com/beomjo/white-noise-player)
+3. 알고리즘 문제풀이 3문제 - [풀이1](https://github.com/beomjo/algorithm-study/commit/9fcec7991ae62779aa25699072a016360ec06760), [풀이2](https://github.com/beomjo/algorithm-study/commit/729f6d50cbbce70f54d37bd6c498299cd4027d6e), [풀이3](https://github.com/beomjo/algorithm-study/commit/19d6c0d2783da2130cd12ed8749cc5b1e70eacaa)
