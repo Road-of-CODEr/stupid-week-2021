@@ -1,3 +1,3 @@
-1. Android Jetpack Room 공부
-2. Kotlin in Action 1장 읽고 정리
-3. 알고리즘 문제풀이 3문제 
+1. Android Jetpack Room 공부 - [Room](https://github.com/beomjo/android-study/blob/main/summary/jetpack/room.md)
+2. Kotlin in Action 1장 읽고 정리 - [Chapter 1](https://github.com/book-driven-development/kotlin-in-action/blob/main/summary/chapter1.md)
+3. 알고리즘 문제풀이 3문제 - [풀이1](https://github.com/beomjo/algorithm-study/commit/36c530c91d5377aaab148b48d8a688f38ed9df5f), [풀이2](https://github.com/beomjo/algorithm-study/commit/3a1a169e826845bbabdc61b02cdc6be4e7e7fa4e), [풀이3](https://github.com/beomjo/algorithm-study/commit/9f186b45e626a1440d6bcf24eb5fef6bb1a67302)
