@@ -1,3 +1,3 @@
-1. Kotlin in Action 2장 읽기
-2. Kotlin in Action 3장 읽기
-3. 알고리즘 문제풀이 3문제
+1. Kotlin in Action 2장 읽기 - [Chapter 2](https://github.com/book-driven-development/kotlin-in-action/blob/main/summary/chapter2.md)
+2. Kotlin in Action 3장 읽기 - [Chapter 3](https://github.com/book-driven-development/kotlin-in-action/blob/main/summary/chapter3.md)
+3. 알고리즘 문제풀이 3문제 - [풀이1](https://github.com/beomjo/algorithm-study/commit/0be5f3e15dbde5858201fef2c30faa9aace2bfb8), [풀이2](https://github.com/beomjo/algorithm-study/commit/41f0f7bd1b4282fb56ea0862d350f213fe9a38c3), [풀이3](https://github.com/beomjo/algorithm-study/commit/cd369bc1780009be5fabeb95627cf1f3032228db)
