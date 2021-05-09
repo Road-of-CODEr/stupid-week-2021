@@ -1,3 +1,3 @@
-1. Kotlin in Action 4장 읽기
-2. Android ViewPager 2 정리
-3. 알고리즘 문제풀이 3문제
+1. Kotlin in Action 4장 읽기 - [Chapter 4](https://github.com/book-driven-development/kotlin-in-action/commit/ead13b040e5caae5f448632bb062288057bec075)
+2. Android ViewPager 2 정리 - [정리](https://github.com/beomjo/android-study/commit/2f9327149df9163d98c7f7c53be450a6a045945b)
+3. 알고리즘 문제풀이 3문제 - [풀이1](https://github.com/beomjo/algorithm-study/commit/b851fe33febb6705cdfc86c57d2e25cb5f327fac), [풀이2](https://github.com/beomjo/algorithm-study/commit/cf18d550d6ac75b8183f571e24bdce79244420c6), [풀이3](https://github.com/beomjo/algorithm-study/commit/b4192b98088ea7e854a63b179174858f692ecd12)
