@@ -1,9 +1,6 @@
 # 이번주 목표   
-1. `we-hate-jvm` 에 `스프링 배치(개념)` 올리기(이후에 자바로 간단한 예제 만들어보려 합니다.) 
-2. 김영한님의 모든 개발자를 위한 http 기본 지식, 전부 정리
-3. 김영한님의 JPA 세션4 공부  
-
-저번 주, 할 일이 많아서 작성을 못하고 넘어갔네요 😥    
-이번 주 부터는 넥스트스텝 TDD 과정이 끝나서      
-이제 본격적으로 스프링이랑, JPA 공부를 들어가고자 하고        
-앞으로 배운 내용들을 기반으로 `we-hate-jvm`에 기여 해보고자 합니다.        
+1. `we-hate-jvm` 에 `스프링 배치(개념)` 올리기 [아직, 작성중입니다](https://github.com/springframework-sprout/Spring_Expert/blob/main/springbatch/SpringBatch.md)
+2. ~~김영한님의 모든 개발자를 위한 http 기본 지식, 전부 정리~~ 
+3. 김영한님의 JPA 세션4 공부 [완료](https://github.com/springframework-sprout/JPA-Programming/blob/main/04%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%95%91.md)
+4. 김영한님의 JPA 세션5 공부 [완료](https://github.com/springframework-sprout/JPA-Programming/blob/main/05%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20%EA%B8%B0%EC%B4%88.md)
+5. 김영한님의 JPA 세션6 공부 [완료](https://github.com/springframework-sprout/JPA-Programming/blob/main/06%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91.md)
